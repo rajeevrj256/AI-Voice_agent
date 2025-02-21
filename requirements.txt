@@ -3,4 +3,5 @@ requests
 generativeai
 genai
 python-dotenv
+gspread
 oauth2client
