@@ -4,8 +4,12 @@ import time
 from oauth2client.service_account import ServiceAccountCredentials
 from notifcation import send_appointment_notification
 # Google Sheets Setup
-SHEET_ID = "1yIMGvFs5vAH7aqvyCpvEAIzmbom8ykygtNcj3xLvrHk"
-SHEET_NAME = "Sheet1"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+SHEET_ID = os.getenv('Google_SHEET_ID')
+SHEET_NAME = os.getenv('Google_SHEET_NAME')
 
 # Authenticate with Google Sheets
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
