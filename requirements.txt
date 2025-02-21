@@ -1,0 +1,6 @@
+flask
+requests
+generativeai
+genai
+python-dotenv
+oauth2client
